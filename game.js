@@ -26,14 +26,14 @@ document.getElementById('input-text').addEventListener('keypress',function(e){
 
 function gameDisplay() {
     // LINE 90
-    basic.cls();
+    //basic.cls();
     // LINE 100
     basic.print("-------------");
     basic.print("YOUR LOCATION");
     basic.print(d$[rm]);
     // LINE 130-170
     basic.print("Exits: ",false);
-    for (i=0;i<r$[rm].length;++i)
+    for (let i = 0; i < r$[rm].length; ++i)
     {
         basic.print(r$[rm].substring(i,i+1)+",",false);
     }
@@ -77,7 +77,6 @@ function game(){
     {
         if (w$ == o$[i]) {
             ob=i;
-            console.log(o$[i]);
         }
     }
 
@@ -381,19 +380,19 @@ function waitForReturn() {
 /** replaces several 'GOSUB 1030's as well as the verb 12 section at 1030 */
 function verbOpen()
 {
-    if (rm=43 && (ob==28 || ob==29)) {
+    if (rm==44 && (ob==28 || ob==29)) {
         f[17]=0
         m$="DRAWER OPEN";
     } 
     if (rm == 28 && ob==25)m$="IT'S LOCKED";
-    if (rm=28 && ob == 32) {
+    if (rm==28 && ob == 32) {
         m$="THAT'S CREEPY!"
         f[2]=0;
     }
 }
 
 function initialise() {
-    l=["ignore",46,38,35,50,13,18,28,42,10,25,26,4,2,7,47,60,43,32];
+    l=["ignore",46,38,35,50,13,18,28,42,10,25,26,4,2,7,47,60,44,32];
     
     /** possible verbs */
     verb$=["ignore because basic starts at 1",
@@ -438,6 +437,7 @@ function initialise() {
         "PAINTING","RING","MAGIC SPELLS","GOBLET","SCROLL","COINS","STATUE","CANDLESTICK",
         "MATCHES","VACUUM","BATTERIES","SHOVEL","AXE","ROPE","BOARD","AEROSOL","CANDLE","KEY",
         "NORTH","SOUTH","WEST","EAST","UP","DOWN",
+        "DOOR","BATS","GHOSTS","DRAWER","DESK","COAT","RUBBISH",
         "COFFIN","BOOKS","XZANFAR","WALL","SPELLS"
     ];
     c=[];
