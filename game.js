@@ -278,9 +278,9 @@ function verbInterpret(){
                 if (c[14] != 1 && rm ==7) m$="THIS IS NO TIME TO PLAY GAMES";
                 if (ob==14 && c[14]==1) m$="YOU SWUNG IT";
                 if (ob ==13 && c[13]==1) m$="WOOSH!";
-                if (ob ==13 && c[13]==1 && rm ==43) {
-                    r$(rm)="WN";
-                    d$(rm)="STUDY WITH SECRET ROOM";
+                if (ob ==13 && c[13]==1 && rm ==44) {
+                    r$[rm]="WN";
+                    d$[rm]="STUDY WITH SECRET ROOM";
                     m$="YOU BROKE THE THIN WALL";
                 }
                 break;
