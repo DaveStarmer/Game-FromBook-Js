@@ -2,7 +2,6 @@
 // from BASIC version
 // this version for Browser JS
 
-
 // LINE 70
 var v = 25, w = 36, g = 18;
 // variables which need global scope, but weren't originally declared at this point
