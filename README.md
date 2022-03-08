@@ -2,7 +2,7 @@
 A game from an old book on BBC BASIC, converted to JS
 
 In conversation, my mother-in-law showed me a book on learning BBC BASIC. It hailed from
-the days where one copied code out by hand from books and magazines to create games.
+the days where one copied code out by hand from books and magazines to create games (aka my youth).
 Back in the days where games included text-based adventure games (of which this is one).
 While the language is no longer really in use, it occurred to me that it might be fun to 
 try to create one of the games in a more modern language.
